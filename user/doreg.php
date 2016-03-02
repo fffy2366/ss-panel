@@ -1,14 +1,19 @@
 <?php
+error_reporting(3) ;
 header("Content-type: text/html; charset=utf-8");
 //注册处理页面
+#die("===") ;
 require_once '../lib/config.php';
+#die("===") ;
 require_once '../lib/class/user.class.php';
+#die("===") ;
 require_once '../lib/func/comm.func.php';
 require_once '../lib/func/user.func.php';
 require_once '../lib/func/reg.func.php';
 require_once '../lib/class/invite_code.class.php';
 $u = new user();
 //验证Post是否空
+#die("===") ;
 if(empty($_POST) || empty($_POST['username'])){
     header("location:reg.php");
 }else{

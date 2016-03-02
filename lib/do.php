@@ -4,6 +4,13 @@
  */
 //medoo
 require_once 'class/medoo.class.php';
+#var_dump([1,2,3]) ;
+#echo DB_TYPE;
+#echo DB_DBNAME;
+#echo DB_HOST ;
+#echo DB_USER;
+#echo DB_PWD ;
+#die("do") ;
 $db = new medoo([
     // required
     'database_type' => DB_TYPE,
@@ -20,6 +27,7 @@ $db = new medoo([
         PDO::ATTR_CASE => PDO::CASE_NATURAL
     ]
 ]);
+#die("do") ;
 //Define DB Table Name
 $db_table['user'] = "user";
 
