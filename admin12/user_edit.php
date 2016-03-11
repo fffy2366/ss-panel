@@ -35,8 +35,9 @@ if(!empty($_POST)){
     }else{
       $transfer_enable = $_POST['transfer_enable_hidden'];
     }
+    $remark = $_POST['remark'] ;
     $n = new user($user_uid);
-    $query = $n->update($user_name,$user_email,$user_pass,$user_passwd,$transfer_enable);
+    $query = $n->update($user_name,$user_email,$user_pass,$user_passwd,$transfer_enable,$remark);
     if($query){
         echo ' <script>alert("更新成功!")</script> ';
         echo " <script>window.location='user.php';</script> " ;
@@ -107,7 +108,11 @@ if(!empty($_GET)){
                                 <input type="hidden" name="transfer_enable_hidden" value="<?php echo $rs['transfer_enable'];?>" >
                                 <input   class="form-control" name="transfer_enable"  placeholder="单位为GB，直接输入数值" >
                             </div>
-
+			    
+			    <div class="form-group">
+				<label for="cate_title">备注</label>
+                                <textarea   class="form-control" name="remark"  placeholder="备注" ><?php echo $rs['remark']?></textarea>
+			    </div>
                         </div><!-- /.box-body -->
 
                         <div class="box-footer">

@@ -14,13 +14,14 @@
          $this->db  = $db;
      }
 
-     function update($user_name,$user_email,$user_pass,$user_passwd,$transfer_enable){
+     function update($user_name,$user_email,$user_pass,$user_passwd,$transfer_enable,$remark){
          $sql = " UPDATE `user` SET
                   `user_name` = '$user_name',
                   `email` = '$user_email',
                   `pass` = '$user_pass',
                   `passwd` = '$user_passwd',
-                  `transfer_enable` = '$transfer_enable'
+                  `transfer_enable` = '$transfer_enable',
+                  `remark` = '$remark'
                   WHERE  `uid` = '$this->uid' ";
          $reset = " UPDATE `user` SET `transfer_enable` = '-9999' WHERE `uid` = '$this->uid' ";
          $this->dbc->query($reset);
