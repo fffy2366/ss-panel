@@ -25,7 +25,7 @@
                   WHERE  `uid` = '$this->uid' ";
          $reset = " UPDATE `user` SET `transfer_enable` = '-9999' WHERE `uid` = '$this->uid' ";
          $this->dbc->query($reset);
-         sleep(15);
+         //sleep(15);
          $query = $this->dbc->query($sql);
          return $query;
      }
