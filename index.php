@@ -8,7 +8,7 @@ include_once 'header.php';
 
     <div class="jumbotron">
         <h2><?php echo $site_name; ?></h2>
-        <p class="lead"> 注册成功即获5G流量，新加坡,日本双节点。</p>
+        <p class="lead"> 注册成功即获5G流量，美国,日本双节点。</p>
         <p><a class="btn btn-lg btn-success" href="user/reg.php" role="button">立即注册</a></p>
 	<p><a target="_blank" href="https://ttt.tt/150/">科学上网利器 Shadowsocks 使用方法</a></p>
 	<p><a target="_blank" href="https://frankly.taobao.com/">>>戳这里购买邀请码</a></p>
