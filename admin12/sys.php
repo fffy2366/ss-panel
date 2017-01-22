@@ -52,6 +52,14 @@ $all_user    = $ssmin->user_all_count();
                             <p>过去1min在线人数<code><?php echo $ssmin->user_time_count(60);?></code>。</p>
                             <p>实时在线人数<code><?php echo $ssmin->user_time_count(10);?></code>。</p>
                             <p>过去24小时在线人数<code><?php echo $ssmin->user_time_count(3600*24);?></code>。</p>
+			    <p>过去24在线：
+			   <?php 
+			  	//var_export($ssmin->user_time(3600*24)) ;
+				//while($u=$ssmin->user_time(3600*24)){
+					//echo $u['user_name'] ;
+				//}
+			   ?> 
+			   </p>
                     </div><!-- /.box -->
             </div>
         </div>

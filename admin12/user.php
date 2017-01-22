@@ -43,7 +43,7 @@ $togb = $tomb*1024;
                                     <th>操作</th>
                                 </tr>
                                 <?php
-                                $sql ="SELECT * FROM `user`  ORDER BY uid ";
+                                $sql ="SELECT * FROM `user`  ORDER BY t desc,uid desc ";
                                 $query =  $dbc->query($sql);
                                 while ( $rs = $query->fetch_array()){ ?>
                                     <tr>

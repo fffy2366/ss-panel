@@ -53,6 +53,15 @@ class ssmin {
         $row = $query->fetch_array();
         return $row[0];
     }
+    //过去一段时间内的在线人数
+    function user_time($time){
+        $now = time();
+        $time = $now-$time;
+        $sql = "SELECT * FROM `user` WHERE `t` >$time ";
+        $query = $this->dbc->query($sql);
+        $row = $query->fetch_array();
+        return $row;
+    }
 
     function node_count(){
         $sql = "SELECT COUNT(id) FROM `ss_node` ";
