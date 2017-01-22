@@ -1,4 +1,6 @@
 <?php
+header("Content-type:text/html;charset=utf8") ;
+die("qq:294234990 <a href='/user/login.php'>登录</a>") ;
 include_once 'lib/config.php';
 include_once 'header.php';
 ?>
