@@ -1,6 +1,7 @@
 <?php
 header("Content-type:text/html;charset=utf8") ;
-die("qq:294234990 <a href='/user/login.php'>登录</a>") ;
+//die("各位，由于非常时期，服务暂停，退款请联系qq:294234990，多谢支持！") ;
+die("配置有变化，请登录后查看 qq:294234990 <a href='/user/login.php'>登录</a>") ;
 include_once 'lib/config.php';
 include_once 'header.php';
 ?>
